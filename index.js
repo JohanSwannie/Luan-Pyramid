@@ -1,6 +1,5 @@
 const character = "#";
 const count = 8;
-const rows = [];
 
 function padRow(rowNumber, rowCount) {
   return (
@@ -11,10 +10,5 @@ function padRow(rowNumber, rowCount) {
 }
 
 for (let i = 1; i <= count; i++) {
-  rows.push(i);
-}
-
-for (let j = 0; j < rows.length; j++) {
-  const result = padRow(rows[j], count);
-  console.log(result);
+  console.log(padRow(i, count));
 }
